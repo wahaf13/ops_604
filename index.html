@@ -2,62 +2,77 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>OPS</title>
+  <title>Módulos de Curso</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/estilo.css">
+  <link rel="stylesheet" href="assets/css/portada_curso.css">
+
+  <style>
+    
+  </style>
 </head>
 <body>
-  <main role="main" class="container-fluid pl-0 pr-0 ml-1 mr-1 container_01">
-      <div class="row contenido ml-1 mr-1 pt-0">
 
-        <div class="col-md-4 px-4" style="background: #F7F0D6; border-radius: 1rem !important;">
-          <p class="titulo pt-4">
-            Bienvenida y bienvenido al Módulo 1. Epidemiología, factores de riesgo, consejería y prevención del cáncer de mama.
-          </p>
+<div class="container-fluid">
+  <div class="row align-items-center d-flex justify-content-between" style="min-height: 100vh;">
+    
+    <!-- Menú lateral -->
+    <div class="col-lg-1 col-md-2 col-sm-5 pl-0">
+      <div class="menu-box efeBtn">
+        <!-- <div>Guía Académica</div> -->
+        <a href="#" >
+          <img src="assets/img/ga.png" alt="Guía Académica">
+        </a>
+      </div>
+      <div class="menu-box efeBtn">
+        <!-- <div>Mi progreso</div> -->
+        <a href="https://campus.paho.org/mooc/course/view.php?id=604&section=6#tabs-tree-start"  target="_parent">
+          <img src="assets/img/progreso.png" alt="Mi Progreso">
+        </a>
+      </div>
+      <div class="menu-box efeBtn">
+        <!-- <div>Créditos</div> -->
+        <img src="assets/img/creditos.png" alt="Créditos">
+      </div>
+    </div>
 
-          <p class="texto_01">
-            En este módulo, se abordarán los factores de riesgo, la importancia del tamizaje como herramienta fundamental para la reducción de la mortalidad, la detección temprana y las estrategias clave de prevención. ¿Cuáles son los principales factores de riesgo del cáncer de mama? ¿Qué estrategias pueden implementarse para reducir su impacto? Estas preguntas serán respondidas a lo largo del módulo.
-          </p>
+    <!-- Módulos -->
+    <div class="col-lg-6 col-md-6 col-sm-6 ">
+      <div class="overlay">
+        <div class="ml-5 module-box efeBtn">
+          <a href="https://campus.paho.org/mooc/course/view.php?id=604&section=1#tabs-tree-start" style="text-decoration: none;"  target="_parent">
+            <h5 class="ml-5" >Módulo 1.</h5>
+            <p class="ml-5">Prevención y factores de riesgo del Cáncer de Mama</p>
+          </a>
         </div>
-
-        <div class="col-md-7 ml-4 mr-2 ">
-          <p class="titulo pt-2">
-            Competencias
-          </p>
-
-          <p class="texto_01">
-            <b>Se espera que al finalizar el estudio de los temas, logres las siguientes competencias:</b>
-          </p>
-
-         <ul style="list-style: none;">
-            <li><b>General: </b></li>
-            <li class="ml-2">Fortalecer el conocimiento y las habilidades del personal de salud en la prevención del cáncer de mama, mediante el conocimiento de su epidemiología, la identificación de factores de riesgo y la aplicación de estrategias de prevención primaria basadas en el Lineamiento Técnico, así como tener en cuenta mecanismos de consejería y acompañamiento emocional. </li>
-            <li><b>Específicas: </b></li>
-            <li class="ml-2">1. Conocer la epidemiología del cáncer de mama en México.</li>
-            <li class="ml-2">2. Identificar los factores de riesgo del cáncer de mama, incluyendo factores genéticos, hormonales, ambientales y de estilo de vida. </li>
-            <li class="ml-2">3. Conocer los mecanismos de consejería y acompañamiento emocional en cáncer de mama. </li>
-            <li class="ml-2">4. Explicar la importancia del tamizaje y la detección temprana en la reducción de la mortalidad por cáncer de mama. </li>
-          </ul>
-
-          <p class="text-center">
-            <a href="1.html">
-              <img class="img-fluid ml-1 efeBtn" src="assets/img/1_1.png"  style="width: 50%;" alt="Comenzar módulo">
-            </a>
-          </p>
-
+        <div class="ml-5 module-box efeBtn">
+          <a href="https://campus.paho.org/mooc/course/view.php?id=604&section=2#tabs-tree-start" style="text-decoration: none;"  target="_parent">
+            <h5 class="ml-5">Módulo 2.</h5>
+            <p class="ml-5">Diagnóstico y abordaje clínico del Cáncer de Mama</p>
+          </a>
         </div>
+        <div class="ml-5 module-box efeBtn">
+          <a href="https://campus.paho.org/mooc/course/view.php?id=604&section=3#tabs-tree-start" style="text-decoration: none;"  target="_parent">
+            <h5 class="ml-5" >Módulo 3.</h5>
+            <p class="ml-5">Tratamiento integral y cuidados paliativos</p>
+          </a>
+        </div>
+        <div class="ml-5 module-box efeBtn">
+          <a href="https://campus.paho.org/mooc/course/view.php?id=604&section=4#tabs-tree-start" style="text-decoration: none;"  target="_parent">
+            <h5 class="ml-5" >Módulo 4.</h5>
+            <p class="ml-5">Control y gestión de la calidad, acciones esenciales para la seguridad de la persona</p>
+          </a>
+        </div>
+      </div>
+    </div>
 
-        
+  </div>
+</div>
 
-      </div><!-- row contenido ml-5 mr-5 pt-3 -->
- 
-    </main><!-- /.container -->
-
-
-  <!-- Scripts necesarios para Bootstrap -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
