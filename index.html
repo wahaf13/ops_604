@@ -2,77 +2,58 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Módulos de Curso</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <title>Módulos del Curso</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/portada_curso.css">
-
-  <style>
-    
-  </style>
 </head>
 <body>
 
-<div class="container-fluid">
-  <div class="row align-items-center d-flex justify-content-between" style="min-height: 100vh;">
-    
+<div class="curso-container">
+  <div class="overlay"></div>
+  <div class="contenido pl-0 align-items-center d-flex justify-content-between">
     <!-- Menú lateral -->
-    <div class="col-lg-1 col-md-2 col-sm-5 pl-0">
-      <div class="menu-box efeBtn">
+    <div class="col-lg-1 col-md-2 col-sm-5 pl-0 menu-lateral">
+      <div class="menu-item efeBtn">
         <!-- <div>Guía Académica</div> -->
         <a href="#" >
           <img src="assets/img/ga.png" alt="Guía Académica">
         </a>
       </div>
-      <div class="menu-box efeBtn">
+      <div class="menu-item efeBtn">
         <!-- <div>Mi progreso</div> -->
         <a href="https://campus.paho.org/mooc/course/view.php?id=604&section=6#tabs-tree-start"  target="_parent">
           <img src="assets/img/progreso.png" alt="Mi Progreso">
         </a>
       </div>
-      <div class="menu-box efeBtn">
+      <div class="menu-item efeBtn">
         <!-- <div>Créditos</div> -->
         <img src="assets/img/creditos.png" alt="Créditos">
       </div>
     </div>
 
-    <!-- Módulos -->
-    <div class="col-lg-6 col-md-6 col-sm-6 ">
-      <div class="overlay">
-        <div class="ml-5 module-box efeBtn">
-          <a href="https://campus.paho.org/mooc/course/view.php?id=604&section=1#tabs-tree-start" style="text-decoration: none;"  target="_parent">
-            <h5 class="ml-5" >Módulo 1.</h5>
-            <p class="ml-5">Prevención y factores de riesgo del Cáncer de Mama</p>
-          </a>
-        </div>
-        <div class="ml-5 module-box efeBtn">
-          <a href="https://campus.paho.org/mooc/course/view.php?id=604&section=2#tabs-tree-start" style="text-decoration: none;"  target="_parent">
-            <h5 class="ml-5">Módulo 2.</h5>
-            <p class="ml-5">Diagnóstico y abordaje clínico del Cáncer de Mama</p>
-          </a>
-        </div>
-        <div class="ml-5 module-box efeBtn">
-          <a href="https://campus.paho.org/mooc/course/view.php?id=604&section=3#tabs-tree-start" style="text-decoration: none;"  target="_parent">
-            <h5 class="ml-5" >Módulo 3.</h5>
-            <p class="ml-5">Tratamiento integral y cuidados paliativos</p>
-          </a>
-        </div>
-        <div class="ml-5 module-box efeBtn">
-          <a href="https://campus.paho.org/mooc/course/view.php?id=604&section=4#tabs-tree-start" style="text-decoration: none;"  target="_parent">
-            <h5 class="ml-5" >Módulo 4.</h5>
-            <p class="ml-5">Control y gestión de la calidad, acciones esenciales para la seguridad de la persona</p>
-          </a>
-        </div>
+
+    <div class="col-md-5 pl-md-4 mt-2">
+      <div class="modulo">
+        <h5 class="ml-5">Módulo 1.</h5>
+        <p class="ml-5">Prevención y factores de riesgo del Cáncer de Mama</p>
+        
+      </div>
+      <div class="modulo">
+        <h5 class="ml-5">Módulo 2.</h5> 
+        <p class="ml-5">Diagnóstico y abordaje clínico del Cáncer de Mama</p>
+      </div>
+      <div class="modulo">
+        <h5 class="ml-5">Módulo 3.</h5> 
+        <p class="ml-5">Tratamiento integral y cuidados paliativos</p>
+      </div>
+      <div class="modulo">
+        <h5 class="ml-5">Módulo 4.</h5> 
+        <p class="ml-5">Control y gestión de la calidad, acciones esenciales para la seguridad de la persona</p>
       </div>
     </div>
-
   </div>
 </div>
-
-<!-- Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
