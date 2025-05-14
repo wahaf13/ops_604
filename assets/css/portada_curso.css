@@ -22,9 +22,9 @@ body {
         
 
     .efeBtn:hover {
-      filter: brightness(120%); 
+      filter: brightness(105%); 
       cursor: pointer;
-      transform: scale(1.01);
+      transform: scale(1.02);
       transition: all 0.6s ease-out;
       transition: .5s ease;
     }
