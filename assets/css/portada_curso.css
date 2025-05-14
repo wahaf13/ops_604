@@ -1,79 +1,85 @@
+body {
+      background-color: #f8f9fa;
+    }
 
-  @font-face {
-    font-family: 'Patria';
-    src: url('../fonts/Patria_Regular.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-  }
+    @font-face {
+      font-family: 'Patria';
+      src: url('../fonts/Patria_Regular.otf') format('opentype');
+      font-weight: normal;
+      font-style: normal;
+    }
 
-  @font-face {
-    font-family: 'NotoSans';
-    src: url('../fonts/NotoSans-Regular.ttf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-  }
+    @font-face {
+      font-family: 'NotoSans';
+      src: url('../fonts/NotoSans-Regular.ttf') format('opentype');
+      font-weight: normal;
+      font-style: normal;
+    }
 
-   .efeBtn{
-
-   }
-      
-
-  .efeBtn:hover {
-    filter: brightness(120%); 
-    cursor: pointer;
-    transform: scale(1.01);
-    transition: all 0.6s ease-out;
-    transition: .5s ease;
-  }
-
-
- body {
-      background: url('../img/back.png') no-repeat center center;
+    .curso-container {
+      background-image: url('../img/back.png');  
       background-size: cover;
-      min-height: 100vh;
-      color: #333;
+      background-position: center;
+      max-width: 1100px;
+      min-height: 600px;
+      height: 100%;
+      width: 100%;
+      margin: 0 auto;
+      position: relative;
+      overflow: hidden;
+      /* border-radius: 10px; */
     }
 
     .overlay {
-      /* background-color: rgba(255, 255, 255, 0.8); */
-      padding: 2rem;
-      border-radius: 8px;
+      /* background: linear-gradient(to right, white 30%, rgba(255, 255, 255, 0)); */
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
     }
 
-    .menu-box {
-      /* background: white; */
-      border-radius: 0px 10px 10px 0px;;
-      /* padding: 1rem; */
+    .contenido {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      height: 100%;
+      padding: 1.5rem;
+    }
+
+    .menu-lateral {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .menu-item {
+      border-radius: 0 10px;
+      font-weight: 500;
       text-align: center;
-      /* box-shadow: 0 2px 4px rgba(0,0,0,0.2); */
-      margin-bottom: 0.7rem;
-      font-family: NotoSans;
-      font-size: 16px;
-    }
-
-    .menu-box img {
-      /* max-height: 50px; */
-      margin-bottom: 0.5rem;
-
-    }
-
-    .module-box {
-      background: linear-gradient(to left, rgb(255, 255, 255) 65%, rgba(255,255,255,0) 100%);
-      /* border-left: 4px solid #800038; */
-      padding: 1rem 1.5rem;
-      margin-bottom: 1rem;
-      border-radius: 10px;
-      /* box-shadow: 0 1px 3px rgba(0,0,0,0.1); */
-    }
-
-    .module-box h5 {
-      color: #671334;
-      font-family: 'Patria';
-      font-size: 24px;
-    }
-
-    .module-box p {
-      color: #131919;
       font-family: 'NotoSans';
-      font-size: 20px;
+    }
+
+    .modulo {
+      background: linear-gradient(to left, rgb(255, 255, 255) 65%, rgba(255,255,255,0) 100%);
+      padding: 1rem;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      
+      font-family: 'NotoSans';
+      color: #161a1d;
+    }
+
+    .modulo h5 {
+      color: #611232;
+      font-family: 'Patria';
+    }
+
+    @media (max-width: 768px) {
+      .contenido {
+        flex-direction: column;
+        overflow-y: auto;
+      }
     }
