@@ -1,0 +1,79 @@
+
+  @font-face {
+    font-family: 'Patria';
+    src: url('../fonts/Patria_Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'NotoSans';
+    src: url('../fonts/NotoSans-Regular.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+   .efeBtn{
+
+   }
+      
+
+  .efeBtn:hover {
+    filter: brightness(120%); 
+    cursor: pointer;
+    transform: scale(1.01);
+    transition: all 0.6s ease-out;
+    transition: .5s ease;
+  }
+
+
+ body {
+      background: url('../img/back.png') no-repeat center center;
+      background-size: cover;
+      min-height: 100vh;
+      color: #333;
+    }
+
+    .overlay {
+      /* background-color: rgba(255, 255, 255, 0.8); */
+      padding: 2rem;
+      border-radius: 8px;
+    }
+
+    .menu-box {
+      /* background: white; */
+      border-radius: 0px 10px 10px 0px;;
+      /* padding: 1rem; */
+      text-align: center;
+      /* box-shadow: 0 2px 4px rgba(0,0,0,0.2); */
+      margin-bottom: 0.7rem;
+      font-family: NotoSans;
+      font-size: 16px;
+    }
+
+    .menu-box img {
+      /* max-height: 50px; */
+      margin-bottom: 0.5rem;
+
+    }
+
+    .module-box {
+      background: linear-gradient(to left, rgb(255, 255, 255) 65%, rgba(255,255,255,0) 100%);
+      /* border-left: 4px solid #800038; */
+      padding: 1rem 1.5rem;
+      margin-bottom: 1rem;
+      border-radius: 10px;
+      /* box-shadow: 0 1px 3px rgba(0,0,0,0.1); */
+    }
+
+    .module-box h5 {
+      color: #671334;
+      font-family: 'Patria';
+      font-size: 24px;
+    }
+
+    .module-box p {
+      color: #131919;
+      font-family: 'NotoSans';
+      font-size: 20px;
+    }
