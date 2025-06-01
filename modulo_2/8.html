@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>OPS</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/estilo.css">
+    <style>
+    .btn-img {
+      cursor: pointer;
+      
+    }
+
+  
+    .content-area {
+      padding: 20px;
+      min-height: 200px;
+    }
+  </style>
+
+</head>
+<body>
+  <main role="main" class="container-fluid pl-0 pr-0 ml-1 mr-1 container_01">
+      <div class="row contenido justify-content-center align-items-start">
+
+        <div class="col-md-12">
+  
+            <div class="row justify-content-center align-items-start">
+
+                <div class="col-lg-4 col-md-4 col-sm-12 mt-5">
+
+                  <p class="titulo">
+                    2. Diagnóstico<br>
+                    <span class="sub_titulo">
+                      2.1 Evaluación diagnóstica por imagen
+                    </span>
+                  </p>
+
+                  <p>
+                    <b><span class="small"><img class="img-fluid" src="assets/img/mouse.png" alt="" style="max-height:20px;" > (Da clic en cada uno de los recuadros para mayor información)</span></b>
+                  </p>
+
+                  <img id="btn1"  class="img-fluid  mt-3 img-btn" src="assets/img/8_1.png" alt="" onclick="mostrarContenido(1)">
+                  <img id="btn2"  class="img-fluid  mt-3 img-btn" src="assets/img/8_2.png" alt="" onclick="mostrarContenido(2)">
+                  <img id="btn3"  class="img-fluid  mt-3 img-btn" src="assets/img/8_3.png" alt="" onclick="mostrarContenido(3)">
+                  <img id="btn4"  class="img-fluid  mt-3 img-btn" src="assets/img/8_4.png" alt="" onclick="mostrarContenido(4)">
+                  <img id="btn5"  class="img-fluid  mt-3 img-btn" src="assets/img/8_5.png" alt="" onclick="mostrarContenido(5)">
+                </div>
+
+                <div class="col-lg-8 col-md-8 col-sm-12 m-0 p-0">
+
+                  <div id="contenido0" class="content-area text-center">
+                    <img class="img-fluid" src="assets/img/8_6.png" alt="" style="max-height: 400px;" >
+                  </div>
+                  <div id="contenido1" class="content-area d-none p-0">
+                    <img class="img-fluid" src="assets/img/8_7.png" alt=""  >
+                  </div>
+                  <div id="contenido2" class="content-area d-none">
+                    <div class="row justify-content-center align-items-center mt-5">
+
+                      <div class="col-lg-8 col-md-8 col-sm-12">
+                        <img class="img-fluid" src="assets/img/8_8.png" alt=""  >
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-12">
+                        <p>
+                          <img class="img-fluid" src="assets/img/8_13.png" alt="" style="max-height:30px;"  ><br>
+                          Se realiza cuando hay hallazgos sospechosos en tamizaje o síntomas clínicos.<br><br>
+                          Debe ser interpretada por un especialista en radiología con certificación vigente.
+                        </p>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div id="contenido3" class="content-area d-none">
+
+                    <div class="d-flex">
+
+                      <div class="col-lg-4 col-md-4 col-sm-12 px-0 bckg_01" >
+                        <p class="pl-3 pt-2 sub_titulo2  text-right">
+                          Categoría
+                        </p>
+                        
+                      </div>
+                      <div class="col-lg-8 col-md-8 col-sm-12 px-0 bckg_01" >
+                        <p class="pl-3 pt-2 sub_titulo2">
+                          Recomendaciones
+                        </p>
+                        
+                      </div>
+                    </div>
+
+                    <div class="d-flex">
+
+                      <div class="col-lg-4 col-md-4 col-sm-12">
+                        <p class="texto_01 text-right">
+                          <span class="sub_titulo3"> 00 </span>
+                          <br>
+                          Existe 13% de posibilidad de malignidad.
+                          Insuficiente para diagnóstico.
+                        </p>
+                      </div>
+                      <div class="col-lg-8 col-md-8 col-sm-12 pt-4" style="border-left-style:solid; border-color: #161a1d;">
+                        Se requiere evaluación con imágenes mastográficas adicionales u otros estudios (US) así como la comparación con estudios previos. Esta categoría no debe de ser utilizada como indicación para realización de resonancia magnética.
+                      </div>
+                    </div>
+
+                    <div class="d-flex">
+                      <div class="col-lg-4 col-md-4 col-sm-12">
+                        <p class="texto_01 text-right">
+                          <span class="sub_titulo3"> 01 </span>
+                          <br>
+                          Negativo. Ningún hallazgo que reportar.
+                        </p>
+                      </div>
+                      <div class="col-lg-8 col-md-8 col-sm-12 pt-4" style="border-left-style:solid; border-color: #161a1d;">
+                        Mastografía anual en mujeres a partir de los 40 años.
+                      </div>
+                    </div>
+
+                    <div class="d-flex">
+                      <div class="col-lg-4 col-md-4 col-sm-12">
+                        <p class="texto_01 text-right">
+                          <span class="sub_titulo3"> 02 </span>
+                          <br>
+                          Hallazgos benignos.
+                        </p>
+                      </div>
+                      <div class="col-lg-8 col-md-8 col-sm-12 pt-4" style="border-left-style:solid; border-color: #161a1d;">
+                        Mastografía anual en mujeres a partir de los 40 años.
+                      </div>
+                    </div>
+
+                    <div class="d-flex">
+                      <div class="col-lg-4 col-md-4 col-sm-12">
+                        <p class="texto_01 text-right">
+                          <span class="sub_titulo3"> 03 </span>
+                          <br>
+                          Hallazgos probablemente benignos. Menos de 2% de probabilidad de malignidad.
+                        </p>
+                      </div>
+                      <div class="col-lg-8 col-md-8 col-sm-12 pt-4" style="border-left-style:solid; border-color: #161a1d;">
+                        Requiere seguimiento por imagen, unilateral del lado con hallazgos dudosos a los 6 meses y posteriormente anual hasta por 2 años. Esta categoría sólo se recomienda en mastografía diagnóstica.
+                      </div>
+                    </div>
+
+                    <div class="d-flex">
+                      <div class="col-lg-4 col-md-4 col-sm-12">
+                        <p class="texto_01 text-right">
+                          <span class="sub_titulo3"> 04 </span>
+                          <br>
+                          Hallazgos de sospecha de malignidad.
+                        </p>
+                      </div>
+                      <div class="col-lg-8 col-md-8 col-sm-12 pt-4" style="border-left-style:solid; border-color: #161a1d;">
+                        Requiere biopsia. 
+                        Se subdivide en:<br>
+
+                        <ul class="list-unstyled ml-3">
+                          <li>4a: Baja sospecha de malignidad (2–<10%)</li>
+                          <li>4b: Moderada sospecha (10–<50%)</li>
+                          <li>4c: Alta sospecha (>50–<95%)</li>
+                        </ul>
+
+                      </div>
+                    </div>
+
+                    <div class="d-flex">
+                      <div class="col-lg-4 col-md-4 col-sm-12">
+                        <p class="texto_01 text-right">
+                          <span class="sub_titulo3"> 05 </span>
+                          <br>
+                          Altamente sugestivo de malignidad.
+                        </p>
+                      </div>
+                      <div class="col-lg-8 col-md-8 col-sm-12  pt-4" style="border-left-style:solid; border-color: #161a1d;">
+                        Requiere biopsia. <br>
+                        Valor predictivo positivo (VPP) >95%.
+                      </div>
+                    </div>
+                  
+
+                    <div class="d-flex">
+                      <div class="col-lg-4 col-md-4 col-sm-12">
+                        <p class="texto_01 text-right">
+                          <span class="sub_titulo3"> 06 </span>
+                          <br>
+                          Con diagnóstico histológico de malignidad.
+                        </p>
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-12 pt-4" style="border-left-style:solid; border-color: #161a1d;">
+                        En espera de tratamiento definitivo o valoración de respuesta a tratamiento.
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-12 text-center">
+                        <img class="img-fluid" src="assets/img/8_14.png" alt="" style="max-height: 80px;"  >
+                        <p class="small"><em>
+                          US: ultrasonido<br>
+                          RM: resonancia magnética<br>
+                          VPP: valor predictivo positivo<br>
+                          BI-RADS: breast imaging reporting and data system</em>
+                        </p>
+                      </div>
+                      
+                    </div>
+
+                    <div class="d-flex">
+                      <div class="col-lg-12 col-md-12 col-sm-12 mx-2">
+                          <p class="text-center small">
+                            Fuente: <b>Grupo Interinstitucional de Expertos en Cáncer de Mama. (2023).</b> Consenso mexicano sobre diagnóstico y tratamiento del cáncer mamario. Décima revisión. 
+                          </p>
+                        </div>
+                    </div>
+
+
+                  </div>
+
+
+                  <div id="contenido4" class="content-area d-none">
+                    <div class="row justify-content-center align-items-center mt-5">
+
+                      <div class="col-lg-8 col-md-8 col-sm-12">
+                        <img class="img-fluid" src="assets/img/8_9.png" alt=""  >
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-12">
+                        <p>
+                          <img class="img-fluid" src="assets/img/8_13.png" alt="" style="max-height:30px;"  ><br>
+
+                          Se recomienda en mujeres con <b>senos densos</b> o cuando la mastografía muestra hallazgos indeterminados.<br><br>
+                          Útil para diferenciar <b>lesiones sólidas y quísticas</b>.<br><br>
+                          Puede ayudar en la guía para biopsia de lesiones sospechosas.<br><br>
+
+                        </p>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div id="contenido5" class="content-area d-none">
+                    <div class="row justify-content-center align-items-center mt-5">
+
+                      <div class="col-lg-8 col-md-8 col-sm-12">
+                        <img class="img-fluid" src="assets/img/8_10.png" alt=""  >
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-12">
+                        <p>
+                          <img class="img-fluid" src="assets/img/8_13.png" alt="" style="max-height:30px;"  ><br>
+                          Indicada en personas con <b>alto riesgo de cáncer de mama</b> (mutaciones genéticas, antecedentes familiares significativos).<br><br>
+                          Se usa en evaluación <b>preoperatoria</b> para definir extensión de la enfermedad.<br><br>
+                          Puede ser útil en el seguimiento postquirúrgico en ciertos casos específicos.<br><br>
+                        </p>
+                      </div>
+
+                    </div>
+                  </div>
+                  
+                </div>
+
+            </div>
+            
+        </div>
+
+      </div><!-- row contenido ml-5 mr-5 pt-3 -->
+
+      <div class="row "><!-- pie -->
+        <div class="col-md-10 text-center">
+          <span style="font-size: 10px; font-family: NotoSans; ">Página 8 de 16</span>
+        </div>
+        <div class="col-md-12 d-flex justify-content-around align-items-start">
+          <div class="col-lg-10 col-md-10 col-sm-12 text-right ">
+            <div class="col-md-12 pie d-flex justify-content-center">
+              <a href="7.html">
+                <img class="img-fluid ml-1 efeBtn" src="assets/img/atras.png" alt="atrás" style="width: 80%;">
+              </a>
+              <a href="index.html">
+                <img class="img-fluid ml-1 efeBtn" src="assets/img/inicio.png" alt="inicio" style="width: 80%;">
+              </a>
+              <a href="9.html">
+                <img class="img-fluid ml-1 efeBtn" src="assets/img/sig.png" alt="Sig" style="width: 80%;">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-2 col-sm-12 text-right">
+            <img class="img-fluid mr-5" src="../assets/img/logo_04.png"  alt="">
+          </div>
+        </div>
+      </div><!-- pie -->
+ 
+    </main><!-- /.container -->
+
+  <!-- Scripts necesarios para Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+  <script>
+
+  function mostrarContenido(n) {
+    // Oculta todos los contenidos
+    document.querySelectorAll('.content-area').forEach(div => div.classList.add('d-none'));
+
+    // Muestra el contenido seleccionado
+    document.getElementById('contenido' + n).classList.remove('d-none');
+
+    // Actualiza las imágenes de los botones
+    for (let i = 1; i <= 5; i++) {
+      document.getElementById('btn' + i).src = (i === n) 
+        ? `assets/img/8_${i}.png`
+        : `assets/img/8_${i}_inactivo.png`;
+    }
+  }
+</script>
+
+</body>
+</html>

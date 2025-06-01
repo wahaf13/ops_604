@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>OPS</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/estilo.css">
+    <style>
+    .btn-img {
+      cursor: pointer; 
+    }
+
+    .content-area {
+      padding: 20px;
+      min-height: 200px;
+    }
+
+  </style>
+
+</head>
+<body>
+  <main role="main" class="container-fluid pl-0 pr-0 ml-1 mr-1 container_01">
+      <div class="row contenido justify-content-center align-items-start">
+
+        <div class="col-md-12">
+  
+            <div class="row justify-content-center align-items-start">
+
+                <div class="col-lg-4 col-md-4 col-sm-12 mt-5">
+
+                  <p class="titulo">
+                    2. Diagnóstico<br>
+                    <span class="sub_titulo">
+                      2.2 Métodos Histopatológicos
+                    </span>
+                  </p>
+
+                  <p>
+                    <b><span class="small"><img class="img-fluid" src="assets/img/mouse.png" alt="" style="max-height:20px;" > (Da clic en cada uno de los recuadros para mayor información)</span></b>
+                  </p>
+
+                  <img id="btn1"  class="img-fluid  mt-3 img-btn" src="assets/img/9_1.png" alt="" onclick="mostrarContenido(1)">
+                  <img id="btn2"  class="img-fluid  mt-3 img-btn" src="assets/img/9_2.png" alt="" onclick="mostrarContenido(2)">
+                  <img id="btn3"  class="img-fluid  mt-3 img-btn" src="assets/img/9_3.png" alt="" onclick="mostrarContenido(3)">
+                  <img id="btn4"  class="img-fluid  mt-3 img-btn" src="assets/img/9_4.png" alt="" onclick="mostrarContenido(4)">
+
+                </div>
+
+                <div class="col-lg-8 col-md-8 col-sm-12 m-0 p-0">
+
+                  <div id="contenido0" class="content-area text-center">
+                    <img class="img-fluid" src="assets/img/8_6.png" alt="" style="max-height: 400px;" ><br>
+                    <p>
+                      
+                    </p>
+                  </div>
+                  <div id="contenido1" class="content-area d-none p-0">
+                    <img class="img-fluid" src="assets/img/9_5.png" alt=""  >
+                  </div>
+                  <div id="contenido2" class="content-area d-none">
+                    <div class="row justify-content-center align-items-center mt-5">
+
+                      <div class="col-lg-8 col-md-8 col-sm-12">
+                        <img class="img-fluid" src="assets/img/9_6.png" alt=""  >
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-12">
+                        <p>
+                          <img class="img-fluid" src="assets/img/8_13.png" alt="" style="max-height:30px;"  ><br>
+                          Método inicial para evaluación citológica en ciertos casos.<br><br>
+
+                          Puede ser utilizada para descartar patologías benignas, pero <b>no siempre es concluyente</b> para diagnóstico definitivo.
+                        </p>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div id="contenido3" class="content-area d-none">
+
+                    <div class="row justify-content-center align-items-center mt-5">
+
+                      <div class="col-lg-8 col-md-8 col-sm-12">
+                        <img class="img-fluid" src="assets/img/9_7.png" alt=""  >
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-12">
+                        <p>
+                          <img class="img-fluid" src="assets/img/8_13.png" alt="" style="max-height:30px;"  ><br>
+                          Método estándar para obtener muestras de tejido para diagnóstico histológico.<br><br>
+                          Permite determinar <b>tipo histológico y perfil molecular (receptores hormonales y HER2).</b>
+                        </p>
+                      </div>
+
+                    </div>
+
+                    
+
+
+                  </div>
+
+
+                  <div id="contenido4" class="content-area d-none">
+                    <div class="row justify-content-center align-items-center mt-5">
+
+                      <div class="col-lg-4 col-md-4 col-sm-12">
+                        <img class="img-fluid" src="assets/img/8_13.png" alt="" style="max-height:30px;"  ><br>
+                        <p class="p-2">
+                          Se realiza cuando los métodos previos <b>no son concluyentes.</b>
+                        </p>
+                      </div>
+
+                      <div class="col-lg-4 col-md-4 col-sm-12">
+                        <p class="p-2">
+                           Indicada en casos con alta sospecha de cáncer, pero sin confirmación en BAG.
+                        </p>
+                      </div>
+
+                      <div class="col-lg-4 col-md-4 col-sm-12">
+                        <p class="p-2">
+                          Permite obtener una muestra más amplia para análisis definitivo. 
+                        </p>
+                      </div>
+
+                      <div class="col-lg-12 col-md-12 col-sm-12">
+                        <img class="img-fluid" src="assets/img/9_8.png" alt=""  style="max-height:290px;" >
+                      </div>
+
+
+                    </div>
+                  </div>
+
+                  <div id="contenido5" class="content-area d-none">
+                    <div class="row justify-content-center align-items-center mt-5">
+
+                      <div class="col-lg-8 col-md-8 col-sm-12">
+                        <img class="img-fluid" src="assets/img/8_10.png" alt=""  >
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-12">
+                        <p>
+                          <img class="img-fluid" src="assets/img/8_13.png" alt="" style="max-height:30px;"  ><br>
+                          Indicada en personas con <b>alto riesgo de cáncer de mama</b> (mutaciones genéticas, antecedentes familiares significativos).<br><br>
+                          Se usa en evaluación <b>preoperatoria</b> para definir extensión de la enfermedad.<br><br>
+                          Puede ser útil en el seguimiento postquirúrgico en ciertos casos específicos.<br><br>
+                        </p>
+                      </div>
+
+                    </div>
+                  </div>
+                  
+                </div>
+
+            </div>
+            
+        </div>
+
+      </div><!-- row contenido ml-5 mr-5 pt-3 -->
+
+      <div class="row "><!-- pie -->
+        <div class="col-md-10 text-center">
+          <span style="font-size: 10px; font-family: NotoSans; ">Página 9 de 16</span>
+        </div>
+        <div class="col-md-12 d-flex justify-content-around align-items-start">
+          <div class="col-lg-10 col-md-10 col-sm-12 text-right ">
+            <div class="col-md-12 pie d-flex justify-content-center">
+              <a href="8.html">
+                <img class="img-fluid ml-1 efeBtn" src="assets/img/atras.png" alt="atrás" style="width: 80%;">
+              </a>
+              <a href="index.html">
+                <img class="img-fluid ml-1 efeBtn" src="assets/img/inicio.png" alt="inicio" style="width: 80%;">
+              </a>
+              <a href="10.html">
+                <img class="img-fluid ml-1 efeBtn" src="assets/img/sig.png" alt="Sig" style="width: 80%;">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-2 col-sm-12 text-right">
+            <img class="img-fluid mr-5" src="../assets/img/logo_04.png"  alt="">
+          </div>
+        </div>
+      </div><!-- pie -->
+ 
+    </main><!-- /.container -->
+
+  <!-- Scripts necesarios para Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+  <script>
+
+  function mostrarContenido(n) {
+    // Oculta todos los contenidos
+    document.querySelectorAll('.content-area').forEach(div => div.classList.add('d-none'));
+
+    // Muestra el contenido seleccionado
+    document.getElementById('contenido' + n).classList.remove('d-none');
+
+    // Actualiza las imágenes de los botones
+    for (let i = 1; i <= 4; i++) {
+      document.getElementById('btn' + i).src = (i === n) 
+        ? `assets/img/9_${i}.png`
+        : `assets/img/9_${i}_inactivo.png`;
+    }
+  }
+</script>
+
+</body>
+</html>
