@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>OPS</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/estilo.css">
+
+  <style>
+
+    .btn_contenido {
+      animation: fadeInUp 0.5s ease-out;
+    }
+    
+
+    .content-area {
+      padding: 20px;
+      min-height: 200px;
+    }
+
+    .btn-img {
+      cursor: pointer;
+      max-width: 230px; 
+      transition: transform 0.2s;
+    }
+
+    .btn-img:hover {
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(15px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+
+  </style>
+
+</head>
+<body>
+  <main role="main" class="container-fluid pl-0 pr-0 ml-1 mr-1 container_01">
+      <div class="row contenido justify-content-center align-items-start">
+
+        <div class="col-md-12">
+          <p class="titulo">
+            1. Tratamiento del Cáncer de Mama<br>
+            <span class="sub_titulo">
+              Tratamiento locorregional
+            </span>
+          </p>
+
+          <div class="row justify-content-center align-items-start">
+                <div class="col-lg-3 col-md-3 col-sm-12 mt-2">
+                  <p class=" mb-4">
+                    <img class="img-fluid" src="assets/img/mouse.png" alt="" style="max-height:20px;" > 
+                    Da clic para conocer los diferentes procesos que se incluyen en esta clasificación:
+                  </p>
+
+                  <img src="assets/img/4_1_in.png" 
+                     id="btnCirugia" 
+                     class="btn-img" 
+                     alt="Cirugía" 
+                     data-default="assets/img/4_1_in.png" 
+                     data-active="assets/img/4_1_act.png">
+
+                  <div id="contenidoCirugia" class="btn_contenido" style="display: none;">
+                    <img id="btn2" class="img-fluid btn-img " src="assets/img/4_2_in.png" alt="" onclick="mostrarContenido(2)">
+                    <img id="btn3" class="img-fluid btn-img " src="assets/img/4_3_in.png" alt="" onclick="mostrarContenido(3)">
+                    <img id="btn4" class="img-fluid btn-img " src="assets/img/4_4_in.png" alt="" onclick="mostrarContenido(4)" >
+                  </div>
+
+                   <img src="assets/img/4_5_in.png" 
+                     id="btnRadioterapia" 
+                     class="btn-img mt-3" 
+                     alt="Radioterapia"
+                     data-default="assets/img/4_5_in.png" 
+                     data-active="assets/img/4_5_act.png">
+
+                    <!-- <img id="btn5" class="img-fluid mt-4" src="assets/img/4_5_in.png" alt="" style="max-width: 190px;" onclick="mostrarContenido(5)" > -->
+                </div>
+
+                <div class="col-lg-8 col-md-8 col-sm-12">
+
+                  <div id="contenido0" class="content-area">
+                    
+                  </div>
+
+                  <div id="contenido2" class="content-area d-none">
+                    <p class="text-center">
+                      <b>Preserva la mama, extirpando<br> el tumor con márgenes adecuados.</b>
+                      <img class="img-fluid" src="assets/img/3_9.png" alt="" style="max-width:460px; " >
+                    </p>
+                    
+                  </div>
+
+                  <div id="contenido3" class="content-area d-none">
+                    <img class="img-fluid" src="assets/img/3_10.png" alt="" >
+                  </div>
+
+                  <div id="contenido4" class="content-area d-none">
+                    <p class="text-center">
+                      <b>Para evaluación del compromiso linfático.</b>
+                      <img class="img-fluid" src="assets/img/3_11.png" alt="" style="max-width:570px; " >
+                    </p>
+                    
+                  </div>
+
+
+
+                  <div id="contenidoRadioterapia" class="btn_contenido" style="display: none;">
+                    <p class="text-center">
+                      <img class="img-fluid" src="assets/img/3_13.png" alt="" style="max-width: 300px;" >
+                    </p>
+  
+                    <p>
+                      Indicada tras cirugía conservadora para reducir el riesgo de recurrencia.<br><br>
+
+                      Se recomienda iniciar en un máximo de 8 semanas después de la cirugía o 30 días después de quimioterapia adyuvante.<br><br>
+
+                      Debe ser administrada en centros especializados que cumplan con criterios de calidad y seguridad en el tratamiento oncológico.<br><br>
+
+                      Debe realizarse en centros acreditados, conforme a los requisitos de calidad establecidos por la Secretaría de Salud.
+                    </p>
+                  </div>
+
+                </div>
+
+          </div>
+
+      </div>
+
+      </div><!-- row contenido ml-5 mr-5 pt-3 -->
+
+      <div class="row "><!-- pie -->
+        <div class="col-md-10 text-center">
+          <span style="font-size: 10px; font-family: NotoSans; ">Página 4 de 13</span>
+        </div>
+        <div class="col-md-12 d-flex justify-content-around align-items-start">
+          <div class="col-lg-10 col-md-10 col-sm-12 text-right ">
+            <div class="col-md-12 pie d-flex justify-content-center">
+              <a href="3.html">
+                <img class="img-fluid ml-1 efeBtn" src="assets/img/atras.png" alt="atrás" style="width: 80%;">
+              </a>
+              <a href="index.html">
+                <img class="img-fluid ml-1 efeBtn" src="assets/img/inicio.png" alt="inicio" style="width: 80%;">
+              </a>
+              <a href="5.html">
+                <img class="img-fluid ml-1 efeBtn" src="assets/img/sig.png" alt="Sig" style="width: 80%;">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-2 col-sm-12 text-right">
+            <img class="img-fluid mr-5" src="../assets/img/logo_04.png"  alt="">
+          </div>
+        </div>
+      </div><!-- pie -->
+ 
+    </main><!-- /.container -->
+
+  <!-- Scripts necesarios para Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+  <script>
+
+    function mostrarContenido(n) {
+      // Oculta todos los contenidos
+      document.querySelectorAll('.content-area').forEach(div => div.classList.add('d-none'));
+
+      // Muestra el contenido seleccionado
+      document.getElementById('contenido' + n).classList.remove('d-none');
+
+      // Actualiza las imágenes de los botones
+      for (let i = 2; i <= 4; i++) {
+        document.getElementById('btn' + i).src = (i === n) 
+          ? `assets/img/4_${i}_act.png`
+          : `assets/img/4_${i}_in.png`;
+      }
+    }
+  </script>
+
+<script>
+  const btnCirugia = document.getElementById("btnCirugia");
+  const btnRadioterapia = document.getElementById("btnRadioterapia");
+  const contenidoCirugia = document.getElementById("contenidoCirugia");
+  const contenidoRadioterapia = document.getElementById("contenidoRadioterapia");
+
+  btnCirugia.addEventListener("click", function () {
+    // Activar Cirugía
+    this.src = this.dataset.active;
+    btnRadioterapia.src = btnRadioterapia.dataset.default;
+
+    // Mostrar Cirugía, ocultar Radioterapia
+    contenidoCirugia.style.display = "block";
+    contenidoRadioterapia.style.display = "none";
+  });
+
+  btnRadioterapia.addEventListener("click", function () {
+    // Activar Radioterapia
+    this.src = this.dataset.active;
+    btnCirugia.src = btnCirugia.dataset.default;
+
+    // Mostrar Radioterapia, ocultar Cirugía
+    contenidoRadioterapia.style.display = "block";
+    contenidoCirugia.style.display = "none";
+
+    document.getElementById('contenido0').classList.add('d-none');
+    document.getElementById('contenido2').classList.add('d-none');
+    document.getElementById('contenido3').classList.add('d-none');
+    document.getElementById('contenido4').classList.add('d-none');
+
+    document.getElementById('btn2').src = `assets/img/4_2_in.png`;
+    document.getElementById('btn3').src = `assets/img/4_3_in.png`;
+    document.getElementById('btn4').src = `assets/img/4_4_in.png`;
+
+  });
+</script>
+
+</body>
+</html>
