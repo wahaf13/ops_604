@@ -12,16 +12,32 @@
        
     }
 
-.div-con-borde-mitad::before {
-  content: ''; 
-  position: absolute;  
-  top: 52%;  
-  right: 0;  
-  height: 48%;  
-  width: 1px;  
-  background-color: #000;  
+    .div-con-borde-mitad::before {
+      content: ''; 
+      position: absolute;  
+      top: 52%;  
+      right: 0;  
+      height: 48%;  
+      width: 0.8px;  
+      background-color: #000;  
+    }
 
-}
+    .div-con-borde-75 {
+      position: relative;  
+      padding: 1rem;  
+       
+    }
+
+    .div-con-borde-75::before {
+      content: ''; 
+      position: absolute;  
+      top: 25%;  
+      left: 0;  
+      height: 75%;  
+      width: 1px;  
+      background-color: #000;  
+    }
+
   </style>
 </head>
 <body>
@@ -38,11 +54,10 @@
 
               <!-- Bloque 01 -->
               <div class="col-lg-3 col-md-3 mb-4 m-0 p-0">
-                <div class="p-4 border-left border-bottom border-right border-dark h-100">
-                  <div class="d-flex align-items-center mb-3">
-                    <div class="rounded-circle text-white fw-bold d-flex justify-content-center align-items-center"
-                         style="background-color: #6b0f1a; width: 50px; height: 50px;">
-                      01
+                <div class="p-4 div-con-borde-75 border-bottom border-right border-dark h-100">
+                  <div class="d-flex align-items-center mb-3" style="margin-left: -50px;">
+                    <div class="mr-2 fw-bold d-flex justify-content-center align-items-center">
+                      <img src="assets/img/7_2.png" alt="" class="img-fluid" style="max-width: 70px;">
                     </div>
                     <h5 class="ms-3 mb-0"><strong>Intervalo Prediagnóstico</strong></h5>
                   </div>
@@ -56,10 +71,9 @@
               <!-- Bloque 02 -->
               <div class="col-lg-3 col-md-3 p-0 m-0">
                 <div class="px-3 py-4 border-top border-dark h-100">
-                  <div class="d-flex align-items-center mb-3">
-                    <div class="rounded-circle text-white fw-bold d-flex justify-content-center align-items-center"
-                         style="background-color: #184c3c; width: 50px; height: 50px;">
-                      02
+                  <div class="d-flex align-items-center mb-3" style="margin-left: -50px;">
+                    <div class="mr-2 fw-bold d-flex justify-content-center align-items-center" >
+                      <img src="assets/img/7_3.png" alt="" class="img-fluid" style="max-width: 70px;">
                     </div>
                     <h5 class="ms-3 mb-0"><strong>Intervalo Diagnóstico</strong></h5>
                   </div>
@@ -83,11 +97,10 @@
 
               <!-- Bloque 03 -->
               <div class="col-lg-3 col-md-3 mb-4 p-0 m-0">
-                <div class="p-4 border-left border-bottom div-con-borde-mitad border-dark h-100 ">
-                  <div class="d-flex align-items-center mb-3">
-                    <div class="rounded-circle text-white fw-bold d-flex justify-content-center align-items-center"
-                         style="background-color: #d9b155; width: 50px; height: 50px;">
-                      03
+                <div class="px-4 border-left border-bottom div-con-borde-mitad border-dark h-100 ">
+                  <div class="d-flex align-items-center mb-3" style="margin-left: -50px;">
+                    <div class="mr-2 fw-bold d-flex justify-content-center align-items-center">
+                      <img src="assets/img/7_4.png" alt="" class="img-fluid" style="max-width: 70px;" >
                     </div>
                     <h5 class="ms-3 mb-0"><strong>Intervalo de Tratamiento</strong></h5>
                   </div>
@@ -110,7 +123,7 @@
 
               <!-- Bloque 04 -->
               <div class="col-lg-3 col-md-3 mb-4 p-0 m-0  border-bottom border-right border-dark">
-                <div class="p-4 h-100 ">
+                <div class="px-4 h-100 ">
                    <img src="assets/img/7_1.png" alt="" 
                        class="img-fluid"  >
                   
