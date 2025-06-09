@@ -37,6 +37,81 @@
       background-color: #000;  
     }
 
+    /* */
+
+    table {
+    border-collapse: collapse;
+    width: 93%;
+    /* table-layout: fixed;*/ 
+    color: #3d3d3e;
+    font-family: 'NotoSans';
+    margin: auto;
+  }
+
+  td {
+    padding: 0px 10px;
+    vertical-align: top;
+    /* border: 1px solid #ccc; */
+  }
+
+  tr {
+    height: 45px;
+  }
+
+  .b_left{
+      border-left: solid 1.3px #161a1d;
+  }
+
+  .b_bottom{
+     border-bottom: solid 1.3px #161a1d;
+  }
+
+  .b_top{
+    border-top: solid 1.3px #161a1d;
+  }
+
+  .b_right{
+     border-right : solid 1.3px #161a1d;
+  }
+
+
+  .numero {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .rojo { background-color: #7e0d24; }
+  .verde { background-color: #163b2b; }
+  .amarillo { background-color: #dab450; }
+
+  .titulo_tabla {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .indicadores p {
+    margin: 8px 0;
+  }
+
+  .imagen {
+    text-align: center;
+  }
+
+  .imagen img {
+    max-width: 100%;
+    height: auto;
+  }
+
+
+
   </style>
 </head>
 <body>
@@ -48,89 +123,181 @@
             2. Diagnóstico
           </p>
 
-          <div class="container my-1">
-            <div class="row justify-content-center align-items-start text-start">
-
-              <!-- Bloque 01 -->
-              <div class="col-lg-3 col-md-3 mb-4 m-0 p-0">
-                <div class="p-4 div-con-borde-75 border-bottom border-right border-dark h-100">
-                  <div class="d-flex align-items-center mb-3" style="margin-left: -50px;">
-                    <div class="mr-2 fw-bold d-flex justify-content-center align-items-center">
-                      <img src="assets/img/7_2.png" alt="" class="img-fluid" style="max-width: 70px;">
-                    </div>
-                    <h5 class="ms-3 mb-0"><strong>Intervalo Prediagnóstico</strong></h5>
+          <table>
+            <tr>
+              <td width="25%" class="b_left b_right pt-0 pb-0" >
+                <div class="d-flex align-items-center mb-0" style="margin-left: -50px;">
+                  <div class="mr-2 fw-bold d-flex justify-content-center align-items-center">
+                    <img src="assets/img/7_2.png" alt="" class="img-fluid" style="max-width: 70px;">
                   </div>
-                  <p>
-                    Inicio de la atención <strong>dentro de 10 días hábiles</strong> posteriores a hallazgos anormales en autoexploración o exploración clínica<br>
-                    <strong>(Indicador B)</strong>
-                  </p>
+                  <h5 class="ms-3 mb-0 sub_titulo6"><strong>Intervalo Prediagnóstico</strong></h5>
                 </div>
-              </div>
+              </td>
 
-              <!-- Bloque 02 -->
-              <div class="col-lg-3 col-md-3 p-0 m-0">
-                <div class="px-3 py-4 border-top border-dark h-100">
-                  <div class="d-flex align-items-center mb-3" style="margin-left: -50px;">
-                    <div class="mr-2 fw-bold d-flex justify-content-center align-items-center" >
-                      <img src="assets/img/7_3.png" alt="" class="img-fluid" style="max-width: 70px;">
-                    </div>
-                    <h5 class="ms-3 mb-0"><strong>Intervalo Diagnóstico</strong></h5>
+              <td width="25%" class="b_top b_right  pt-0 pb-0">
+                <div class="d-flex align-items-center mb-0" style="margin-left: -50px;">
+                  <div class="mr-2 fw-bold d-flex justify-content-center align-items-center" >
+                    <img src="assets/img/7_3.png" alt="" class="img-fluid" style="max-width: 70px;">
                   </div>
-                  <p>
-                    Entrega de resultados <strong>antes de 15 días hábiles</strong> posterior a la toma de la mastografía <br>
-                    <strong>(Indicador C)</strong>
-                  </p>
-                  <p>
-                    Evaluación complementaria y revisión de estudios previos <strong>dentro de 10 días hábiles</strong> ante resultado BI-RADS 0
-                  </p>
-                  <p>
-                    Evaluación diagnóstica <strong>dentro de 10 días hábiles</strong> ante resultado BI-RADS 4 o 5 <br>
-                    <strong>(Indicador D)</strong>
-                  </p>
-                  <p>
-                    Entrega de resultados para segunda opinión en un plazo <strong>no mayor a 5 días 
-                    (Indicador E)</strong>
-                  </p>
+                  <h5 class="ms-3 mb-0 sub_titulo6"><strong>Intervalo <br>Diagnóstico</strong></h5>
                 </div>
-              </div>
+              </td>
 
-              <!-- Bloque 03 -->
-              <div class="col-lg-3 col-md-3 mb-4 p-0 m-0">
-                <div class="px-4 border-left border-bottom div-con-borde-mitad border-dark h-100 ">
-                  <div class="d-flex align-items-center mb-3" style="margin-left: -50px;">
+              <td width="25%" class=" pt-0 pb-0">
+                <div class="d-flex align-items-center mb-0" style="margin-left: -50px;">
                     <div class="mr-2 fw-bold d-flex justify-content-center align-items-center">
                       <img src="assets/img/7_4.png" alt="" class="img-fluid" style="max-width: 70px;" >
                     </div>
-                    <h5 class="ms-3 mb-0"><strong>Intervalo de Tratamiento</strong></h5>
+                    <h5 class="ms-3 mb-0 sub_titulo6"><strong>Intervalo de Tratamiento</strong></h5>
                   </div>
-                  <p>
-                    Inicio del tratamiento oncológico <strong>dentro de 30 días hábiles</strong> posteriores al diagnóstico<br>
-                    <strong>(Indicador H)</strong>
-                  </p>
-                  <p>
-                    Inicio de radioterapia <strong>dentro de las primeras 8 semanas</strong> posteriores a cirugía conservadora<br>
-                    <strong>(Indicador F)</strong>
-                  </p>
-                  <p>
-                    Inicio de radioterapia <strong>dentro de 30 días</strong> posteriores al término de quimioterapia adyuvante<br>
-                    <strong>(Indicador G)</strong>
-                  </p>
+              </td>
 
-                 
-                </div>
-              </div>
+              <td  style=" padding: 0; vertical-align: bottom;"   rowspan="5">
+                
+              <img src="assets/img/7_1.png" alt="" 
+                       class="img-fluid"  > 
+              </td>
 
-              <!-- Bloque 04 -->
-              <div class="col-lg-3 col-md-3 mb-4 p-0 m-0  border-bottom border-right border-dark">
-                <div class="px-4 h-100 ">
-                   <img src="assets/img/7_1.png" alt="" 
-                       class="img-fluid"  >
-                  
-                </div>
-              </div>
+            </tr>
 
-            </div>
-          </div>
+            <tr>
+              <td  rowspan="2" class="b_left b_bottom b_right pt-0 pb-0" >
+                <p class="pt-0 mb-0">
+                    Inicio de la atención <strong>dentro de 10 días hábiles</strong> posteriores a hallazgos anormales en autoexploración o exploración clínica<br>
+                    <strong>(Indicador B)</strong>
+                  </p>
+              </td>
+
+              <td rowspan="8" class=" b_right pt-0">
+                <p>
+                  Entrega de resultados <strong>antes de 15 días hábiles</strong> posterior a la toma de la mastografía <br>
+                  <strong>(Indicador C)</strong>
+                </p>
+                <p>
+                  Evaluación complementaria y revisión de estudios previos <strong>dentro de 10 días hábiles</strong> ante resultado BI-RADS 0
+                </p>
+                <p>
+                  Evaluación diagnóstica <strong>dentro de 10 días hábiles</strong> ante resultado BI-RADS 4 o 5 <br>
+                  <strong>(Indicador D)</strong>
+                </p>
+                <p class="mb-0">
+                  Entrega de resultados para segunda opinión en un plazo <strong>no mayor a 5 días 
+                  (Indicador E)</strong>
+                </p>
+                
+
+              </td>
+
+              <td  rowspan="8" class=" pt-0 b_bottom" >
+                <p>
+                  Inicio del tratamiento oncológico <strong>dentro de 30 días hábiles</strong> posteriores al diagnóstico<br>
+                  <strong>(Indicador H)</strong>
+                </p>
+                <p>
+                  Inicio de radioterapia <strong>dentro de las primeras 8 semanas</strong> posteriores a cirugía conservadora<br>
+                  <strong>(Indicador F)</strong>
+                </p>
+                <p>
+                  Inicio de radioterapia <strong>dentro de 30 días</strong> posteriores al término de quimioterapia adyuvante<br>
+                  <strong>(Indicador G)</strong>
+                </p>
+                
+
+              </td>
+
+                
+              
+
+            </tr>
+            <tr>
+             
+
+            </tr>
+
+             <tr>
+             
+             
+             
+
+              <td  style=" padding: 0; vertical-align: bottom;"  >
+              
+               <!---  <img src="assets/img/7_1.png" alt="" 
+                       class="img-fluid"  >  ---->
+              </td>
+
+            </tr>
+
+             <tr>
+              
+              
+              
+              <td  style=" padding: 0; vertical-align: bottom;"  >
+             
+               <!---  <img src="assets/img/7_1.png" alt="" 
+                       class="img-fluid"  >  ---->
+              </td>
+
+            </tr>
+
+            <tr>
+              <td>
+               
+              </td>
+
+              
+
+  
+
+              
+
+          
+
+              <td class="b_left" >
+                
+              </td>
+
+            </tr>
+            <tr>
+              <td>
+               
+              </td>
+
+              <td class="b_left">
+                
+              </td>
+
+            </tr>
+
+            <tr>
+              <td>
+                
+              </td>
+
+              <td class="b_left">
+            
+              </td>
+
+            </tr>
+
+            <tr>
+              <td>
+               
+              </td>
+
+              <td class="b_left">
+             
+              </td>
+
+            </tr>
+           
+
+          </table>
+              
+
+
+        
+    
+
 
   
             
