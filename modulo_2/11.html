@@ -5,6 +5,71 @@
   <title>OPS</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/estilo.css">
+  <style>
+    .indicador1{
+      background-color: #1e5b4f;
+      padding: 15px 25px;
+      color: #FFF;
+      font-family: Patria;
+      border-radius: 15px;
+    }
+    .borde1{
+      border-bottom: solid #1e5b4f 2px;
+      padding-bottom: 1rem;
+    }
+
+    .sub_titulo22{
+      color: #9b2247;
+      font-size: 18px;
+      font-weight: bold;
+      font-family: 'Patria';
+    }
+
+    .indicador2{
+      background-color: #9b2247;
+      padding: 15px;
+      color: #FFF;
+      font-family: Patria;
+      border-radius: 15px;
+    }
+    .borde2{
+      border-bottom: solid #9b2247 2px;
+      padding-bottom: 1rem;
+    }
+
+    .indicador3{
+      background-color: #a57f2c;
+      padding: 15px;
+      color: #FFF;
+      font-family: Patria;
+      border-radius: 15px;
+    }
+    .borde3{
+      border-bottom: solid #a57f2c 2px;
+      padding-bottom: 1rem;
+    }
+
+    .sub_titulo8 {
+      color: #002f2a;
+      font-size: 18px;
+      font-weight: bold;
+      font-family: 'Patria';
+    }
+
+    .indicador4{
+      background-color: #002f2a;
+      padding: 15px;
+      color: #FFF;
+      font-family: Patria;
+      border-radius: 15px;
+    }
+
+    .borde4{
+      border-bottom: solid #002f2a 2px;
+      padding-bottom: 1rem;
+    }
+
+  </style>
 </head>
 <body>
   <main role="main" class="container-fluid pl-0 pr-0 ml-1 mr-1 container_01">
@@ -17,120 +82,114 @@
           
           <div class="row d-flex align-items-stretch justify-content-center align-items-start">
 
-            <div class="col-lg-3 col-md-3 col-sm-12">
+            <div class="col-lg-3 col-md-3 col-sm-12 text-center">
 
               <span class="sub_titulo3">Indicador A: </span>
-              <p class="texto_03">
+              <p class="indicador2">
                 Detección de cáncer de mama en etapas tempranas ( 0-I-II).
               </p>
 
-              <span class="sub_titulo6">Definición: </span>
-              <p class="texto_03">
+              
+              <p class="texto_03 text-left borde2"><b>Definición: </b>
                 Porcentaje de cánceres in situ o infiltrantes detectados en etapas tempranas.
               </p>
 
-              <span class="sub_titulo6">Fórmula: </span>
-              <p class="texto_03">
+              <p class="sub_titulo3 borde2">
+                <span>Fórmula: </span><br>
                 <b>DCT = (NCDET/TCD) x 100</b><br>
               </p>
 
-              <p class="texto_02">
-                DCT = Detección de cánceres en etapas tempranas.<br>
-                NCDET = Número de casos detectados en etapas tempranas.<br>
-                TCD = Total de casos detectados.
-              </p>
-
-              <p class="texto_03">
+              <p class="texto_01 text-left">
+                <b>DCT =</b> Detección de cánceres en etapas tempranas.<br>
+                <b>NCDET =</b> Número de casos detectados en etapas tempranas.<br>
+                <b>TCD =</b> Total de casos detectados.<br>
                 <b>Estándar: </b>Mayor o igual al 60% de cánceres detectados en etapas tempranas.<br>
               </p>
 
+
             </div>
 
-            <div class="col-lg-3 col-md-3 col-sm-12 "style="border-left-style:solid; border-color: #161a1d;">
+            <div class="col-lg-3 col-md-3 col-sm-12 text-center"style="border-left-style:solid; border-color: #161a1d;">
 
               <span class="sub_titulo">Indicador B: </span>
-              <p class="texto_03">
+              <p class="indicador1">
                 Oportunidad de inicio de evaluación diagnóstica complementaria
               </p>
 
-              <span class="sub_titulo6">Definición: </span>
-              <p class="texto_03">
+              
+              <p class="texto_01 text-left borde1">
+                <b>Definición: </b>
                 Porcentaje de personas con evaluación diagnóstica dentro de los 10 días hábiles posteriores a hallazgos anormales.
               </p>
 
-              <span class="sub_titulo6">Fórmula: </span>
-              <p class="texto_03">
+              <p class="sub_titulo borde1">Fórmula: <br>
+              
                 <b>OED = (NPA/TPA) x 100</b><br>
               </p>
 
-              <p class="texto_02">
-                DCT = Detección de cánceres en etapas tempranas.<br>
-                NCDET = Número de casos detectados en etapas tempranas.<br>
-                TCD = Total de casos detectados.
-              </p>
-
-              <p class="texto_03">
-                <b>Estándar: </b>Evaluación diagnóstica en menos de 10 días hábiles.<br>
+              <p class="texto_01 text-left">
+                <b>DCT =</b> Detección de cánceres en etapas tempranas.<br>
+                <b>NCDET =</b> Número de casos detectados en etapas tempranas.<br>
+                <b>TCD =</b> Total de casos detectados.<br>
+                <b>Estándar: </b>Evaluación diagnóstica en menos de 10 días hábiles.
               </p>
 
             </div>
 
-            <div class="col-lg-3 col-md-3 col-sm-12" style="border-left-style:solid; border-color: #161a1d;">
+            <div class="col-lg-3 col-md-3 col-sm-12 text-center" style="border-left-style:solid; border-color: #161a1d;">
 
-              <span class="sub_titulo6">Indicador C: </span>
-              <p class="texto_03">
+              <span class="sub_titulo4">Indicador C: </span>
+              <p class="indicador3">
                 Oportunidad en la entrega de resultados de mastografía
               </p>
 
-              <span class="sub_titulo6">Definición: </span>
-              <p class="texto_03">
-                Porcentaje de entrega de resultados a las personas usuarias antes de 15 días hábiles posteriores a la fecha de toma de la mastografía.
+              <p class="texto_01 text-left borde3">
+               <b>Definición:</b> Porcentaje de entrega de resultados a las personas usuarias antes de 15 días hábiles posteriores a la fecha de toma de la mastografía.
               </p>
 
-              <span class="sub_titulo6">Fórmula: </span>
-              <p class="texto_03">
+              
+              <p class="sub_titulo4 borde3">
+                <span>Fórmula: </span><br>
                 <b>OER = (NER/TM) x 100</b><br>
               </p>
 
-              <p class="texto_02">
-                OER = Oportunidad de entrega de resultados.<br>
-                NER = Número de resultados entregados antes de 15 días hábiles.<br>
-                TM = Total de mastografías realizadas.
+              <p class="texto_01 text-left">
+                <b>OER =</b> Oportunidad de entrega de resultados.<br>
+                <b>NER =</b> Número de resultados entregados antes de 15 días hábiles.<br>
+                <b>TM =</b> Total de mastografías realizadas.<br>
+                <b>Estándar: </b>Mayor o igual al 60% de cánceres detectados en etapas tempranas.
               </p>
 
               <p class="texto_03">
-                <b>Estándar: </b>Mayor o igual al 60% de cánceres detectados en etapas tempranas.<br>
+                
               </p>
 
             </div>
 
-            <div class="col-lg-3 col-md-3 col-sm-12"style="border-left-style:solid; border-color: #161a1d;">
+            <div class="col-lg-3 col-md-3 col-sm-12 text-center"style="border-left-style:solid; border-color: #161a1d;">
 
-              <span class="sub_titulo5">Indicador D: </span>
-              <p class="texto_03">
+              <span class="sub_titulo8">Indicador D: </span>
+              <p class="indicador4">
                 Oportunidad en la evaluación diagnóstica de BI-RADS 4 o 5
               </p>
 
-              <span class="sub_titulo6">Definición: </span>
-              <p class="texto_03">
-                Porcentaje de personas con resultado BI-RADS 4 o 5 con fecha de toma de biopsia para estudio histopatológico dentro de 10 días hábiles posteriores a la fecha del diagnóstico radiológico.
+             
+              <p class="texto_01 text-left borde4">
+               <b>Definición: </b>Porcentaje de personas con resultado BI-RADS 4 o 5 con fecha de toma de biopsia para estudio histopatológico dentro de 10 días hábiles posteriores a la fecha del diagnóstico radiológico.
 
               </p>
 
-              <span class="sub_titulo6">Fórmula: </span>
-              <p class="texto_03">
-                <b>OEDB4-5 = (NCEDB4-5/TCRB4-5) x 100</b><br>
+              
+              <p class="sub_titulo8 borde4">
+                <span>Fórmula: </span><br>
+                <b>OEDB4-5 = (NCEDB4-5/TCRB4-5) x 100</b>
               </p>
 
-              <p class="texto_02">
-                OEDB4-5 = Oportunidad en la evaluación diagnóstica de BI-RADS 4 o 5.<br>
-                NCEDB4-5 = Número de casos con evaluación diagnóstica ante resultado BI-RADS 4 o 5 antes de los 10 días hábiles posteriores al diagnóstico.<br>
-                TCRB4-5 = Total de casos con resultado BI-RADS 4 o 5.
-              </p>
-
-              <p class="texto_03">
+              <p class="texto_01 text-left">
+                <b>OEDB4-5 =</b> Oportunidad en la evaluación diagnóstica de BI-RADS 4 o 5.<br>
+                <b>NCEDB4-5 =</b> Número de casos con evaluación diagnóstica ante resultado BI-RADS 4 o 5 antes de los 10 días hábiles posteriores al diagnóstico.<br>
+                <b>TCRB4-5 =</b> Total de casos con resultado BI-RADS 4 o 5.<br>
                 <b>Estándar: </b>Evaluación diagnóstica dentro de 10 días hábiles ante resultado BI-RADS 4 o 5.
-<br>
               </p>
 
             </div>
